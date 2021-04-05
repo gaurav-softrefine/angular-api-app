@@ -2,22 +2,38 @@
 
 
 
-<div class="card " style="width: 18rem;" *ngFor="let data of jsonData" class="container newrow">
-    <div class="row">
-        <div class="col" *ngIf='data.id == 1'>
-            <div class="card bg-primary">
-                <div class="card-body">
-                    <h5 class="card-title">Name: {{data.name}}</h5>
-                    <ul id="ul">
-                        <li><label>Username:</label> {{data.username}}</li>
-                        <li><label>Email:</label> {{data.email}}</li>
-                        <li><label>City:</label> {{data.address.city}}</li>
-                    </ul>
+<div *ngFor="let data of jsonData">
+    <!-- <div class="row"> -->
+    <div class=" newrow">
+        <div class="card card-body bg-primary" *ngIf='data.id == 1'>
 
-                </div>
-            </div>
+            <h5 id="name" class="card-title">Name: {{data.name}}</h5>
+            <ul id="ul">
+                <li><label>Username:</label> {{data.username}}</li>
+                <li><label>Email:</label> {{data.email}}</li>
+                <li><label>City:</label> {{data.address.city}}</li>
+            </ul>
         </div>
-        <div class="col" *ngIf='data.id == 2'>
+        <div class="card card-body bg-primary" *ngIf='data.id == 2'>
+
+            <h5 id="name" class="card-title">Name: {{data.name}}</h5>
+            <ul id="ul">
+                <li><label>Username:</label> {{data.username}}</li>
+                <li><label>Email:</label> {{data.email}}</li>
+                <li><label>City:</label> {{data.address.city}}</li>
+            </ul>
+        </div>
+        <div class="card card-body bg-primary" *ngIf='data.id == 3'>
+
+            <h5 id="name" class="card-title">Name: {{data.name}}</h5>
+            <ul id="ul">
+                <li><label>Username:</label> {{data.username}}</li>
+                <li><label>Email:</label> {{data.email}}</li>
+                <li><label>City:</label> {{data.address.city}}</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="col" *ngIf='data.id == 2'>
             <div class="card bg-info">
                 <div class="card-body">
                     <h5 class="card-title">Name: {{data.name}}</h5>
@@ -42,6 +58,6 @@
 
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
 </div>
+<!-- </div> -->

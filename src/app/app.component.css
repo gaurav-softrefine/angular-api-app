@@ -1,9 +1,11 @@
-.row{
-    /* width: 100%; */
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
+.newrow{
+    width: 250px;
+    height: 190px;
+
+    margin: 0 auto 15px auto;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
 
 }
 #ul li{
@@ -11,4 +13,8 @@
 }
 .card{
     width: 300px;
+}
+#name{
+    font-weight: 800;
+    font-size: 20px;
 }
